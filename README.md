@@ -11,3 +11,6 @@ PyTorch >= 1.8.0
 
 
 Some code are modified from https://github.com/photosynthesis-team/piq.
+
+
+# Initial release, more will be added.
