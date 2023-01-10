@@ -9,6 +9,8 @@ pip install dists-pytorch
 
 PyTorch >= 1.8.0
 
+# Usage:
+python perceptual_attack_clean.py
 
 Some code are modified from https://github.com/photosynthesis-team/piq.
 
