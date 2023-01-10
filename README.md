@@ -19,7 +19,7 @@ Google: https://drive.google.com/file/d/18oPH4lALm8mSdZh3fWK97MVq9w3BbEua/view?u
 
 Baidu: https://pan.baidu.com/s/1KKncQIoQcbxj7fQlSKUBIQ code：yyev
 
-#CORNIA weights, download and unzip
+# CORNIA weights, download and unzip
 https://drive.google.com/file/d/1yngG6X-woK7gbQLwvCA-6MXzkn3KYrDg/view?usp=sharing
 
 # Initial release, more will be added.
