@@ -84,15 +84,13 @@ def jnd_attack_adam(x, model, regularizer, config):
                 optimizer = torch.optim.Adam([adv], lr=alpha)
             s = quality_prediction(adv, model, config.quality_model, seed=i)
 
-        if (config.lamda != 0) & (config.fr_reg != 6):
+        if (config.lamda != 0):
             if config.fr_reg == 2:  # lpips
                 FR_reg = 1 - regularizer(ref, adv, as_loss=True)
-            elif config.fr_reg == 3: #dists
-                FR_reg = 0
             else:
                 FR_reg = regularizer(ref, adv)
         else:
-            FR_reg = 0
+            FR_reg = -torch.max(torch.abs(ref - adv))
 
         obj = -((s - s_init).pow(2) + config.lamda * FR_reg)
         optimizer.zero_grad()
